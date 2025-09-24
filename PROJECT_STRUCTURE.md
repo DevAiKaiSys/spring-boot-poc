@@ -12,19 +12,21 @@ websocketredis/
 │   │   │               │
 │   │   │               ├── ☕️ WebsocketRedisApplication.java (ไฟล์เริ่มต้นโปรเจ็กต์)
 │   │   │               │
-│   │   │               ├── 📁 config/
-│   │   │               │   └── 📄 WebSocketConfig.java (สำหรับตั้งค่า WebSocket)
-│   │   │               │
-│   │   │               ├── 📁 controller/
-│   │   │               │   └── 📄 ProjectController.java (รับ request จากภายนอก)
-│   │   │               │
-│   │   │               ├── 📁 service/
-│   │   │               │   └── 📄 ProjectService.java (จัดการ Logic หลัก)
-│   │   │               │
-│   │   │               ├── 📁 dto/ (Data Transfer Object)
-│   │   │               │
-│   │   │               └── 📁 repository/
-│   │   │                   └── 📄 ProjectRepository.java (สำหรับจัดการข้อมูล)
+                        │   ├── config/
+                        │   ├── RedisConfig.java
+                        │   └── WebSocketConfig.java
+                        ├── controller/
+                        │   ├── FileUploadController.java
+                        │   └── ProjectController.java
+                        ├── dto/
+                        │   ├── ProjectStatusMessage.java
+                        │   ├── StartProjectRequest.java
+                        │   └── TaskResponse.java
+                        ├── service/
+                        │   ├── FileUploadService.java
+                        │   ├── ProjectCreationService.java
+                        │   ├── RedisPublisherService.java
+                        │   └── RedisMessageSubscriber.java
 │   │   │
 │   │   └── 📁 resources/
 │   │       ├── 📁 static/      (เก็บไฟล์ CSS, JavaScript, รูปภาพ)
